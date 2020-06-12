@@ -3,7 +3,7 @@ import Action from './actionTypes'
 
 describe("Actions Testing", () => {
     it(`should create an action as ${Action.BUY_CAKE}`, () => {
-        const quantity = 11
+        const quantity = 1
         const qnt = quantity > 10 ? 0 : quantity 
         const payload = qnt
         const cost = qnt * 500
@@ -14,4 +14,19 @@ describe("Actions Testing", () => {
         }
         expect(actions.buyCake(qnt)).toEqual(expectedAction)
     });
+
+    it(`should create an action as ${Action.BUY_ICECREAM}`, () => {
+        const quantity = 2
+        const qnt = quantity > 20 ? 0 : quantity 
+        const payload = qnt
+        const cost = qnt * 200
+        const expectedAction = {
+            type: Action.BUY_ICECREAM,
+            payload,
+            cost
+        }
+        expect(actions.buyIceCream(qnt)).toEqual(expectedAction)
+    });
+
+
 })
