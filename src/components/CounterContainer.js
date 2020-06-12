@@ -12,7 +12,7 @@ function CounterContainer(props) {
 
 const mapStateToProps = state => {
     return{
-        totalMoney: state.counter.totalMoney
+        totalMoney: state.totalMoney
      }
 }
 

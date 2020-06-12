@@ -15,7 +15,7 @@ function ChocolateContainer(props) {
 
 const mapStateToProps = state => {
     return{
-        numOfChocolates:state.chocolate.numOfChocolates
+        numOfChocolates:state.numOfChocolates
      }
 }
 
