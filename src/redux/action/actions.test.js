@@ -28,5 +28,17 @@ describe("Actions Testing", () => {
         expect(actions.buyIceCream(qnt)).toEqual(expectedAction)
     });
 
+    it(`should create an action as ${Action.BUY_CHOCOLATE}`, () => {
+        const quantity = 2
+        const qnt = quantity > 30 ? 0 : quantity 
+        const payload = qnt
+        const cost = qnt * 100
+        const expectedAction = {
+            type: Action.BUY_CHOCOLATE,
+            payload,
+            cost
+        }
+        expect(actions.buyChocolate(qnt)).toEqual(expectedAction)
+    });
 
 })
