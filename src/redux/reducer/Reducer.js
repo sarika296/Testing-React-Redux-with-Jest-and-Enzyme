@@ -1,5 +1,5 @@
 import Action from '../action/actionTypes'
- 
+
 export const initialState = {
     numOfCakes: 10,
     numOfIceCreams: 20,
