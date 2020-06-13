@@ -10,10 +10,10 @@ describe("Reducers Testing", () => {
     
     it('should create a reducer of BUY_CAKE', () => {
 
-        const expectedState = { numOfCakes: 0, totalMoney: 5000}
-
-        const newState = Reducer(cakeInitialState,  { type: Action.BUY_CAKE, payload: 10 , cost: 5000 } )
-
+        const payload = 10
+        const cost = 500 * payload
+        const expectedState = { numOfCakes: 0, totalMoney: cost }
+        const newState = Reducer(cakeInitialState,  { type: Action.BUY_CAKE, payload, cost } )
         expect(newState).toEqual(expectedState)
     });
 
