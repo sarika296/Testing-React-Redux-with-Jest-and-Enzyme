@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducer Snapshot Testing... renders component correctly 1`] = `
+Array [
+  <div
+    className="cake"
+  >
+    Cake Shop App
+  </div>,
+  <div
+    className="App"
+  >
+    <div>
+      <h2>
+        Number of cakes - 
+        10
+         
+      </h2>
+      <input
+        onChange={[Function]}
+        type="text"
+        value={1}
+      />
+      <button
+        onClick={[Function]}
+      >
+        Buy 
+        1
+         Cake
+      </button>
+    </div>
+    <div>
+      <h2>
+        Number of ice-creams - 
+        20
+         
+      </h2>
+      <input
+        onChange={[Function]}
+        type="text"
+        value={1}
+      />
+      <button
+        onClick={[Function]}
+      >
+        Buy 
+        1
+         Ice Cream
+      </button>
+    </div>
+    <div>
+      <h2>
+        Number of chocolates - 
+        30
+         
+      </h2>
+      <input
+        onChange={[Function]}
+        type="text"
+        value={1}
+      />
+      <button
+        onClick={[Function]}
+      >
+        Buy 
+        1
+         Chocolate
+      </button>
+    </div>
+    <div>
+      <h2>
+        Total Money To The Counter
+      </h2>
+      <p
+        style={
+          Object {
+            "fontSize": 20,
+          }
+        }
+      >
+        Total Money - 
+        0
+         
+      </p>
+    </div>
+  </div>,
+]
+`;

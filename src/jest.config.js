@@ -16,7 +16,6 @@ module.exports = {
     collectCoverageFrom: [
         "!*/node_modules/*",
         "!*/coverage/*",
-        "!**/serviceWorker.js",
         "!**/index.js",
         "!**/App.js"
       ],

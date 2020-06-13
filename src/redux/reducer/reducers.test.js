@@ -17,17 +17,19 @@ const chocolateInitialState = {
 }
 
 describe("Reducers Testing", () => {
-    
-    it('should create a reducer of BUY_CAKE', () => {
+
+    it('should return new state if action type is BUY_CAKE', () => {
 
         const payload = 10
         const cost = 500 * payload
         const expectedState = { numOfCakes: 0, totalMoney: cost }
-        const newState = Reducer(cakeInitialState,  { type: Action.BUY_CAKE, payload, cost } )
+        const newState = Reducer(cakeInitialState,  { type: Action.BUY_CAKE, payload, cost, data: {
+            numOfCakes: 0, totalMoney: cost }
+        })
         expect(newState).toEqual(expectedState)
     });
 
-    it('should create a reducer of BUY_ICECREAM', () => {
+    it('should return new state if action type is BUY_ICECREAM', () => {
 
         const payload = 10
         const cost = 200 * payload
@@ -36,7 +38,7 @@ describe("Reducers Testing", () => {
         expect(newState).toEqual(expectedState)
     });
 
-    it('should create a reducer of BUY_CHOCOLATE', () => {
+    it('should return new state if action type is BUY_CHOCOLATE', () => {
 
         const payload = 10
         const cost = 100 * payload
