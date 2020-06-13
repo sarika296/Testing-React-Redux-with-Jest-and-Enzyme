@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Reducer Snapshot Testing... renders component correctly 1`] = `
+exports[`App Snapshot Testing... renders app component correctly 1`] = `
 Array [
   <div
     className="cake"
