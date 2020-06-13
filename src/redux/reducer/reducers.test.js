@@ -6,6 +6,11 @@ const cakeInitialState = {
     totalMoney: 0
 }
 
+const iceCreamInitialState = {
+    numOfIceCreams: 20,
+    totalMoney: 0
+}
+
 describe("Reducers Testing", () => {
     
     it('should create a reducer of BUY_CAKE', () => {
@@ -14,6 +19,15 @@ describe("Reducers Testing", () => {
         const cost = 500 * payload
         const expectedState = { numOfCakes: 0, totalMoney: cost }
         const newState = Reducer(cakeInitialState,  { type: Action.BUY_CAKE, payload, cost } )
+        expect(newState).toEqual(expectedState)
+    });
+
+    it('should create a reducer of BUY_ICECREAM', () => {
+
+        const payload = 10
+        const cost = 200 * payload
+        const expectedState = { numOfIceCreams: 10, totalMoney: cost }
+        const newState = Reducer(iceCreamInitialState,  { type: Action.BUY_ICECREAM, payload, cost } )
         expect(newState).toEqual(expectedState)
     });
 
